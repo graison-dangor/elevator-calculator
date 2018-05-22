@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- All the meta stuff goes here -->
+    <!-- All the meta stuff goes here -->
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,354 +12,354 @@
     </head>
 
     <body>
-      <!-- Setting the container so I can style it when I'm done with html and CSS -->
-    <div class="container">
-      <img src="triptych.png">
-      <h1>How Often Is Your Subway Elevator Broken?</h1>
-      <h4>Designed by Graison Dangor<sup>*</sup></h4>
-      <!-- Drop-down menu -->
-      <!-- Giving it an id for the jQuery to reference and for CSS to style -->
-      <hr>
-
-     
-
-      <form>
-      <h2 class="menuintro">Which station do you leave from?</h2>
-      <input type="text" list="start-station" placeholder="Station name">
-      <datalist id="start-station">
-      <option value="86.20">161 St-Yankee Stadium (4, B, D)</option>
-      <option value="93.15">161 St-Yankee Stadium (4)</option>
-      <option value="96.25">3 Av-149 St (2, 5)</option>
-      <option value="97.82">233 St (2, 5)</option>
-      <option value="97.87">Pelham Pkwy (2, 5)</option>
-      <option value="98.18">Simpson St (2, 5)</option>
-      <option value="98.60">Gun Hill Rd (2, 5)</option>
-      <option value="98.88">Hunts Point Av (6)</option>
-      <option value="99.06">231 St (1)</option>
-      <option value="99.06">Kingsbridge Rd (B, D)</option>
-      <option value="99.07">Pelham Bay Park (6)</option>
-      <option value="99.12">180 St (2, 5)</option>
-      <option value="99.13">Fordham Rd (4)</option>
-      <option value="99.16">161 St-Yankee Stadium (B, D)</option>
-      <option value="76.78">168 St (1)</option>
-      <option value="79.02">181 St (1)</option>
-      <option value="81.97">168 St (1)</option>
-      <option value="83.94">96 St (2, 3, 1)</option>
-      <option value="85.88">Grand Central-42 St (7)</option>
-      <option value="87.97">Times Sq-42 St (N, Q, R, W)</option>
-      <option value="88.43">191 St (1)</option>
-      <option value="88.50">181 St (1)</option>
-      <option value="88.75">14 St (A, C, E)</option>
-      <option value="89.08">96 St (Q)</option>
-      <option value="89.45">125 St (A, B, C, D)</option>
-      <option value="89.56">Bleecker St (D, F, B, M, 6)</option>
-      <option value="89.85">191 St (1)</option>
-      <option value="91.67">181 St (1)</option>
-      <option value="92.66">14 St-Union Sq (L)</option>
-      <option value="93.47">125 St (4, 5, 6)</option>
-      <option value="93.54">96 St (2, 3, 1)</option>
-      <option value="93.69">Chambers St (1, 2, 3)</option>
-      <option value="94.27">96 St (Q)</option>
-      <option value="94.50">Times Sq-42 St (1, 2, 3, 7)</option>
-      <option value="94.66">191 St (1)</option>
-      <option value="95.04">Grand Central-42 St (4, 5, 6, 7, S)</option>
-      <option value="95.29">Bowling Green (4, 5)</option>
-      <option value="95.58">191 St (1)</option>
-      <option value="95.67">Lexington Av-53 St (E, M)</option>
-      <option value="96.42">51 St (6)</option>
-      <option value="96.49">168 St (1, A, C)</option>
-      <option value="96.51">34 St-Herald Sq (B, D, F, M, N, Q, R, W)</option>
-      <option value="96.55">8 Av (L)</option>
-      <option value="96.72">Times Sq-42 St (N, Q, R, W)</option>
-      <option value="96.77">Bleecker St (D, F, B, M, 6)</option>
-      <option value="96.80">34 St-Penn Station (2, 3)</option>
-      <option value="96.83">Bleecker St (D, F, B, M, 6)</option>
-      <option value="96.94">23 St (6)</option>
-      <option value="97.00">Bleecker St (D, F, B, M, 6)</option>
-      <option value="97.06">168 St (1)</option>
-      <option value="97.16">South Ferry (1)</option>
-      <option value="97.18">Bowling Green (4, 5)</option>
-      <option value="97.22">Dyckman St (1)</option>
-      <option value="97.33">86 St (Q)</option>
-      <option value="97.40">34 St-Penn Station (C, E)</option>
-      <option value="97.55">14 St (A, C, E)</option>
-      <option value="97.59">175 St (A)</option>
-      <option value="97.63">Chambers St (1, 2, 3)</option>
-      <option value="97.74">34 St-Penn Station (C, E)</option>
-      <option value="97.74">125 St (A, B, C, D)</option>
-      <option value="97.74">181 St (1)</option>
-      <option value="97.76">190 St (A)</option>
-      <option value="97.79">57 St-7 Av (N, Q, R, W)</option>
-      <option value="97.82">125 St (A, B, C, D)</option>
-      <option value="97.82">23 St (6)</option>
-      <option value="97.86">86 St (Q)</option>
-      <option value="97.91">Fulton St (J, Z)</option>
-      <option value="97.95">125 St (4, 5, 6)</option>
-      <option value="97.98">14 St/8 Av (A, C, E, L)</option>
-      <option value="97.99">34 St-Penn Station (C, E)</option>
-      <option value="98.04">168 St (1)</option>
-      <option value="98.08">Fulton St (2, 3)</option>
-      <option value="98.21">181 St (A)</option>
-      <option value="98.24">34 St-Herald Sq (N, Q, R, W)</option>
-      <option value="98.27">West 4 St (A, B, C, D, E, F, M)</option>
-      <option value="98.29">Roosevelt Island (F)</option>
-      <option value="98.30">Bleecker St (D, F, B, M, 6)</option>
-      <option value="98.31">175 St (A)</option>
-      <option value="98.50">59 St-Columbus Circle (A, B, C, D, 1)</option>
-      <option value="98.51">Grand Central-42 St (4, 5, 6)</option>
-      <option value="98.72">14 St-Union Sq (L, N, Q, R, W)</option>
-      <option value="98.77">34 St-Penn Station (A)</option>
-      <option value="98.84">Times Sq-42 St (1, 2, 3)</option>
-      <option value="98.87">Chambers St (1, 2, 3)</option>
-      <option value="98.92">Brooklyn Bridge (4, 5, 6)</option>
-      <option value="98.93">51 St (6)</option>
-      <option value="98.93">Fulton St (A, C, J, Z, 2, 3, 4, 5)</option>
-      <option value="98.96">72 St (1, 2, 3)</option>
-      <option value="98.97">Lexington Av-63 St (F, Q)</option>
-      <option value="99.06">168 St (A, C)</option>
-      <option value="99.13">135 St (2, 3)</option>
-      <option value="99.14">14 St-Union Sq (N, Q, R, W)</option>
-      <option value="99.22">Inwood-207 St (A)</option>
-      <option value="99.24">Roosevelt Island (F)</option>
-      <option value="99.25">72 St (Q)</option>
-      <option value="99.34">47-50 Sts-Rockefeller Center (B, D, F, M)</option>
-      <option value="99.34">66 St-Lincoln Center (1)</option>
-      <option value="99.53">34 St-Herald Sq (B, D, F, M)</option>
-      <option value="99.56">34 St-Hudson Yards (7)</option>
-      <option value="99.59">34 St-Penn Station (1)</option>
-      <option value="99.83">Canal St (6)</option>
-      <option value="91.28">Crown Hts-Utica Av (3, 4)</option>
-      <option value="93.10">Pacific St-Atlantic Av (D, N, R)</option>
-      <option value="93.78">Court St (R)</option>
-      <option value="94.69">Court St (R)</option>
-      <option value="95.00">Brooklyn College-Flatbush Av (2, 5)</option>
-      <option value="95.18">Clark St (2, 3)</option>
-      <option value="95.41">Myrtle-Wyckoff Avs (L)</option>
-      <option value="95.50">Borough Hall (2, 3, 4, 5)</option>
-      <option value="96.02">Pacific St-Atlantic Av (D, N, R)</option>
-      <option value="96.21">Euclid Av (A, C)</option>
-      <option value="96.49">Clark St (2, 3)</option>
-      <option value="96.93">DeKalb Av (B, Q, R)</option>
-      <option value="97.04">Myrtle-Wyckoff Avs (L, M)</option>
-      <option value="97.06">Atlantic Av (4, 5)</option>
-      <option value="97.11">Borough Hall (2, 3, 4, 5)</option>
-      <option value="97.38">Euclid Av (A, C)</option>
-      <option value="97.55">Clark St (2, 3)</option>
-      <option value="97.61">DeKalb Av (B, Q, R)</option>
-      <option value="97.66">Pacific St-Atlantic Av (D, N, R)</option>
-      <option value="97.91">Flushing Av (J, M)</option>
-      <option value="97.92">Franklin Av (C, S)</option>
-      <option value="98.25">Atlantic Av (B, Q)</option>
-      <option value="98.33">Crown Hts-Utica Av (3, 4)</option>
-      <option value="98.41">Myrtle-Wyckoff Avs (M)</option>
-      <option value="98.42">Marcy Av (J, M, Z)</option>
-      <option value="98.45">Marcy Av (J, M, Z)</option>
-      <option value="98.62">Euclid Av (A, C)</option>
-      <option value="98.86">Kings Highway (B, Q)</option>
-      <option value="98.90">DeKalb Av (B, Q, R)</option>
-      <option value="99.13">Church Av (F, G)</option>
-      <option value="99.14">Utica Av (A, C)</option>
-      <option value="99.20">Coney Island-Stillwell Av (DFNQ)</option>
-      <option value="99.20">Church Av (2, 5)</option>
-      <option value="99.35">Bay Parkway (D)</option>
-      <option value="99.36">Atlantic Av (2, 3)</option>
-      <option value="99.40">Jay St (A, C, F, R)</option>
-      <option value="99.62">Prospect Park (B, Q, S)</option>
-      <option value="95.15">Kew Gardens-Union Tpke (E, F)</option>
-      <option value="96.12">Junction Blvd (7)</option>
-      <option value="96.77">Kew Gardens-Union Tpke (E, F)</option>
-      <option value="97.45">Flushing-Main St (7)</option>
-      <option value="97.68">Jamaica Center (E, J, Z)</option>
-      <option value="97.81">Briarwood (E, F)</option>
-      <option value="97.93">Mott Av (A)</option>
-      <option value="98.00">Kew Gardens-Union Tpke (E, F)</option>
-      <option value="98.09">Jamaica-179 St (F)</option>
-      <option value="98.14">Forest Hills (E, F, M, R)</option>
-      <option value="98.61">Jackson Hts-Roosevelt Av (E, F, M, R)</option>
-      <option value="98.76">Sutphin Blvd-Archer Av-JFK (E, J, Z)</option>
-      <option value="98.76">Queens Plaza (E, M, R)</option>
-      <option value="98.83">Jamaica-Van Wyck (E)</option>
-      <option value="98.90">CitiCorp/Court Square (7, E, G)</option>
-      <option value="99.13">21 St-Queensbridge (F)</option>
-      <option value="99.15">74 St-Broadway (7)</option>
-    </datalist>
-</form>
-
-    <!-- Giving it an id for the jQuery to reference and for CSS to style -->
-
-    <form>
-      <h2 class="menuintro">Which station do you arrive at?</h2>
-      <input type="text" list="end-station" placeholder="Station name">
-      <datalist id="end-station">
-            <option value="86.20">161 St-Yankee Stadium (4, B, D)</option>
-            <option value="93.15">161 St-Yankee Stadium (4)</option>
-            <option value="96.25">3 Av-149 St (2, 5)</option>
-            <option value="97.82">233 St (2, 5)</option>
-            <option value="97.87">Pelham Pkwy (2, 5)</option>
-            <option value="98.18">Simpson St (2, 5)</option>
-            <option value="98.60">Gun Hill Rd (2, 5)</option>
-            <option value="98.88">Hunts Point Av (6)</option>
-            <option value="99.06">231 St (1)</option>
-            <option value="99.06">Kingsbridge Rd (B, D)</option>
-            <option value="99.07">Pelham Bay Park (6)</option>
-            <option value="99.12">180 St (2, 5)</option>
-            <option value="99.13">Fordham Rd (4)</option>
-            <option value="99.16">161 St-Yankee Stadium (B, D)</option>
-            <option value="76.78">168 St (1)</option>
-            <option value="79.02">181 St (1)</option>
-            <option value="81.97">168 St (1)</option>
-            <option value="83.94">96 St (2, 3, 1)</option>
-            <option value="85.88">Grand Central-42 St (7)</option>
-            <option value="87.97">Times Sq-42 St (N, Q, R, W)</option>
-            <option value="88.43">191 St (1)</option>
-            <option value="88.50">181 St (1)</option>
-            <option value="88.75">14 St (A, C, E)</option>
-            <option value="89.08">96 St (Q)</option>
-            <option value="89.45">125 St (A, B, C, D)</option>
-            <option value="89.56">Bleecker St (D, F, B, M, 6)</option>
-            <option value="89.85">191 St (1)</option>
-            <option value="91.67">181 St (1)</option>
-            <option value="92.66">14 St-Union Sq (L)</option>
-            <option value="93.47">125 St (4, 5, 6)</option>
-            <option value="93.54">96 St (2, 3, 1)</option>
-            <option value="93.69">Chambers St (1, 2, 3)</option>
-            <option value="94.27">96 St (Q)</option>
-            <option value="94.50">Times Sq-42 St (1, 2, 3, 7)</option>
-            <option value="94.66">191 St (1)</option>
-            <option value="95.04">Grand Central-42 St (4, 5, 6, 7, S)</option>
-            <option value="95.29">Bowling Green (4, 5)</option>
-            <option value="95.58">191 St (1)</option>
-            <option value="95.67">Lexington Av-53 St EM</option>
-            <option value="96.49">168 St 1AC</option>
-            <option value="96.51">34 St-Herald Sq (B, D, F, M, N, Q, R, W)</option>
-            <option value="96.55">8 Av (L)</option>
-            <option value="96.72">Times Sq-42 St (N, Q, R, W)</option>
-            <option value="96.77">Bleecker St (D, F, B, M, 6)</option>
-            <option value="96.80">34 St-Penn Station (2, 3)</option>
-            <option value="96.83">Bleecker St (D, F, B, M, 6)</option>
-            <option value="96.94">23 St (6)</option>
-            <option value="97.00">Bleecker St (D, F, B, M, 6)</option>
-            <option value="97.06">168 St (1)</option>
-            <option value="97.08">South Ferry (1)</option>
-            <option value="97.16">South Ferry (1)</option>
-            <option value="97.18">Bowling Green (4, 5)</option>
-            <option value="97.22">Dyckman St (1)</option>
-            <option value="97.33">86 St (Q)</option>
-            <option value="97.40">34 St-Penn Station (C, E)</option>
-            <option value="97.55">14 St (A, C, E)</option>
-            <option value="97.59">175 St (A)</option>
-            <option value="97.63">Chambers St (1, 2, 3)</option>
-            <option value="97.74">34 St-Penn Station (C, E)</option>
-            <option value="97.74">125 St (A, B, C, D)</option>
-            <option value="97.74">181 St (1)</option>
-            <option value="97.76">190 St (A)</option>
-            <option value="97.79">57 St-7 Av (N, Q, R, W)</option>
-            <option value="97.82">125 St (A, B, C, D)</option>
-            <option value="97.82">23 St (6)</option>
-            <option value="97.86">86 St (Q)</option>
-            <option value="97.91">Fulton St (J, Z)</option>
-            <option value="97.95">125 St (4, 5, 6)</option>
-            <option value="97.98">14 St/8 Av (A, C, E, L)</option>
-            <option value="97.99">34 St-Penn Station (C, E)</option>
-            <option value="98.04">168 St (1)</option>
-            <option value="98.08">Fulton St (2, 3)</option>
-            <option value="98.21">181 St (A)</option>
-            <option value="98.24">34 St-Herald Sq (N, Q, R, W)</option>
-            <option value="98.27">West 4 St (A, B, C, D, E, F, M)</option>
-            <option value="98.29">Roosevelt Island (F)</option>
-            <option value="98.30">Bleecker St (D, F, B, M, 6)</option>
-            <option value="98.31">175 St (A)</option>
-            <option value="98.50">59 St-Columbus Circle (A, B, C, D, 1)</option>
-            <option value="98.51">Grand Central-42 St (4, 5, 6)</option>
-            <option value="98.72">14 St-Union Sq (L, N, Q, R, W)</option>
-            <option value="98.77">34 St-Penn Station (A)</option>
-            <option value="98.84">Times Sq-42 St (1, 2, 3)</option>
-            <option value="98.87">Chambers St (1, 2, 3)</option>
-            <option value="98.92">Brooklyn Bridge (4, 5, 6)</option>
-            <option value="98.93">51 St (6)</option>
-            <option value="98.93">Fulton St (A, C, J, Z, 2, 3, 4, 5)</option>
-            <option value="98.96">72 St (1, 2, 3)</option>
-            <option value="98.97">Lexington Av-63 St (F, Q)</option>
-            <option value="99.06">168 St (A, C)</option>
-            <option value="99.13">135 St (2, 3)</option>
-            <option value="99.14">14 St-Union Sq (N, Q, R, W)</option>
-            <option value="99.22">Inwood-207 St (A)</option>
-            <option value="99.24">Roosevelt Island (F)</option>
-            <option value="99.25">72 St (Q)</option>
-            <option value="99.34">47-50 Sts-Rockefeller Center (B, D, F, M)</option>
-            <option value="99.34">66 St-Lincoln Center (1)</option>
-            <option value="99.53">34 St-Herald Sq (B, D, F, M)</option>
-            <option value="99.56">34 St-Hudson Yards (7)</option>
-            <option value="99.59">34 St-Penn Station (1)</option>
-            <option value="99.83">Canal St (6)</option>
-            <option value="91.28">Crown Hts-Utica Av (3, 4)</option>
-            <option value="93.10">Pacific St-Atlantic Av (D, N, R)</option>
-            <option value="93.78">Court St (R)</option>
-            <option value="94.69">Court St (R)</option>
-            <option value="95.00">Brooklyn College-Flatbush Av (2, 5)</option>
-            <option value="95.18">Clark St (2, 3)</option>
-            <option value="95.41">Myrtle-Wyckoff Avs (L)</option>
-            <option value="95.50">Borough Hall (2, 3, 4, 5)</option>
-            <option value="96.02">Pacific St-Atlantic Av (D, N, R)</option>
-            <option value="96.21">Euclid Av (A, C)</option>
-            <option value="96.49">Clark St (2, 3)</option>
-            <option value="96.93">DeKalb Av (B, Q, R)</option>
-            <option value="97.04">Myrtle-Wyckoff Avs (L, M)</option>
-            <option value="97.06">Atlantic Av (4, 5)</option>
-            <option value="97.11">Borough Hall (2, 3, 4, 5)</option>
-            <option value="97.38">Euclid Av (A, C)</option>
-            <option value="97.55">Clark St (2, 3)</option>
-            <option value="97.61">DeKalb Av (B, Q, R)</option>
-            <option value="97.66">Pacific St-Atlantic Av (D, N, R)</option>
-            <option value="97.91">Flushing Av (J, M)</option>
-            <option value="97.92">Franklin Av (C, S)</option>
-            <option value="98.25">Atlantic Av (B, Q)</option>
-            <option value="98.33">Crown Hts-Utica Av (3, 4)</option>
-            <option value="98.41">Myrtle-Wyckoff Avs (M)</option>
-            <option value="98.42">Marcy Av (J, M, Z)</option>
-            <option value="98.45">Marcy Av (J, M, Z)</option>
-            <option value="98.62">Euclid Av (A, C)</option>
-            <option value="98.86">Kings Highway (B, Q)</option>
-            <option value="98.90">DeKalb Av (B, Q, R)</option>
-            <option value="99.13">Church Av (F, G)</option>
-            <option value="99.14">Utica Av (A, C)</option>
-            <option value="99.20">Coney Island-Stillwell Av (DFNQ)</option>
-            <option value="99.20">Church Av (2, 5)</option>
-            <option value="99.35">Bay Parkway (D)</option>
-            <option value="99.36">Atlantic Av (2, 3)</option>
-            <option value="99.40">Jay St (A, C, F, R)</option>
-            <option value="99.62">Prospect Park (B, Q, S)</option>
-            <option value="95.15">Kew Gardens-Union Tpke (E, F)</option>
-            <option value="96.12">Junction Blvd (7)</option>
-            <option value="96.77">Kew Gardens-Union Tpke (E, F)</option>
-            <option value="97.45">Flushing-Main St (7)</option>
-            <option value="97.68">Jamaica Center (E, J, Z)</option>
-            <option value="97.81">Briarwood (E, F)</option>
-            <option value="97.93">Mott Av (A)</option>
-            <option value="98.00">Kew Gardens-Union Tpke (E, F)</option>
-            <option value="98.09">Jamaica-179 St (F)</option>
-            <option value="98.14">Forest Hills (E, F, M, R)</option>
-            <option value="98.61">Jackson Hts-Roosevelt Av (E, F, M, R)</option>
-            <option value="98.76">Sutphin Blvd-Archer Av-JFK (E, J, Z)</option>
-            <option value="98.76">Queens Plaza (E, M, R)</option>
-            <option value="98.83">Jamaica-Van Wyck (E)</option>
-            <option value="98.90">CitiCorp/Court Square (7, E, G)</option>
-            <option value="99.13">21 St-Queensbridge (F)</option>
-            <option value="99.15">74 St-Broadway (7)</option>
-       </datalist>
-      </form>
+        <!-- Setting the container so I can style it when I'm done with html and CSS -->
+        <div class="container">
+            <img src="triptych.png">
+            <h1>How Often Is Your Subway Elevator Broken?</h1>
+            <h4>Designed by Graison Dangor<sup>*</sup></h4>
+            <!-- Drop-down menu -->
+            <!-- Giving it an id for the jQuery to reference and for CSS to style -->
+            <hr>
 
 
-    <!-- Creates the table element -->
+
+            <form>
+                <h2 class="menuintro">Which station do you leave from?</h2>
+                <input type="text" list="start_station" placeholder="Station name">
+                <datalist id="start_station">
+                  <option value="86.20">161 St-Yankee Stadium (4, B, D)</option>
+                  <option value="93.15">161 St-Yankee Stadium (4)</option>
+                  <option value="96.25">3 Av-149 St (2, 5)</option>
+                  <option value="97.82">233 St (2, 5)</option>
+                  <option value="97.87">Pelham Pkwy (2, 5)</option>
+                  <option value="98.18">Simpson St (2, 5)</option>
+                  <option value="98.60">Gun Hill Rd (2, 5)</option>
+                  <option value="98.88">Hunts Point Av (6)</option>
+                  <option value="99.06">231 St (1)</option>
+                  <option value="99.06">Kingsbridge Rd (B, D)</option>
+                  <option value="99.07">Pelham Bay Park (6)</option>
+                  <option value="99.12">180 St (2, 5)</option>
+                  <option value="99.13">Fordham Rd (4)</option>
+                  <option value="99.16">161 St-Yankee Stadium (B, D)</option>
+                  <option value="76.78">168 St (1)</option>
+                  <option value="79.02">181 St (1)</option>
+                  <option value="81.97">168 St (1)</option>
+                  <option value="83.94">96 St (2, 3, 1)</option>
+                  <option value="85.88">Grand Central-42 St (7)</option>
+                  <option value="87.97">Times Sq-42 St (N, Q, R, W)</option>
+                  <option value="88.43">191 St (1)</option>
+                  <option value="88.50">181 St (1)</option>
+                  <option value="88.75">14 St (A, C, E)</option>
+                  <option value="89.08">96 St (Q)</option>
+                  <option value="89.45">125 St (A, B, C, D)</option>
+                  <option value="89.56">Bleecker St (D, F, B, M, 6)</option>
+                  <option value="89.85">191 St (1)</option>
+                  <option value="91.67">181 St (1)</option>
+                  <option value="92.66">14 St-Union Sq (L)</option>
+                  <option value="93.47">125 St (4, 5, 6)</option>
+                  <option value="93.54">96 St (2, 3, 1)</option>
+                  <option value="93.69">Chambers St (1, 2, 3)</option>
+                  <option value="94.27">96 St (Q)</option>
+                  <option value="94.50">Times Sq-42 St (1, 2, 3, 7)</option>
+                  <option value="94.66">191 St (1)</option>
+                  <option value="95.04">Grand Central-42 St (4, 5, 6, 7, S)</option>
+                  <option value="95.29">Bowling Green (4, 5)</option>
+                  <option value="95.58">191 St (1)</option>
+                  <option value="95.67">Lexington Av-53 St (E, M)</option>
+                  <option value="96.42">51 St (6)</option>
+                  <option value="96.49">168 St (1, A, C)</option>
+                  <option value="96.51">34 St-Herald Sq (B, D, F, M, N, Q, R, W)</option>
+                  <option value="96.55">8 Av (L)</option>
+                  <option value="96.72">Times Sq-42 St (N, Q, R, W)</option>
+                  <option value="96.77">Bleecker St (D, F, B, M, 6)</option>
+                  <option value="96.80">34 St-Penn Station (2, 3)</option>
+                  <option value="96.83">Bleecker St (D, F, B, M, 6)</option>
+                  <option value="96.94">23 St (6)</option>
+                  <option value="97.00">Bleecker St (D, F, B, M, 6)</option>
+                  <option value="97.06">168 St (1)</option>
+                  <option value="97.16">South Ferry (1)</option>
+                  <option value="97.18">Bowling Green (4, 5)</option>
+                  <option value="97.22">Dyckman St (1)</option>
+                  <option value="97.33">86 St (Q)</option>
+                  <option value="97.40">34 St-Penn Station (C, E)</option>
+                  <option value="97.55">14 St (A, C, E)</option>
+                  <option value="97.59">175 St (A)</option>
+                  <option value="97.63">Chambers St (1, 2, 3)</option>
+                  <option value="97.74">34 St-Penn Station (C, E)</option>
+                  <option value="97.74">125 St (A, B, C, D)</option>
+                  <option value="97.74">181 St (1)</option>
+                  <option value="97.76">190 St (A)</option>
+                  <option value="97.79">57 St-7 Av (N, Q, R, W)</option>
+                  <option value="97.82">125 St (A, B, C, D)</option>
+                  <option value="97.82">23 St (6)</option>
+                  <option value="97.86">86 St (Q)</option>
+                  <option value="97.91">Fulton St (J, Z)</option>
+                  <option value="97.95">125 St (4, 5, 6)</option>
+                  <option value="97.98">14 St/8 Av (A, C, E, L)</option>
+                  <option value="97.99">34 St-Penn Station (C, E)</option>
+                  <option value="98.04">168 St (1)</option>
+                  <option value="98.08">Fulton St (2, 3)</option>
+                  <option value="98.21">181 St (A)</option>
+                  <option value="98.24">34 St-Herald Sq (N, Q, R, W)</option>
+                  <option value="98.27">West 4 St (A, B, C, D, E, F, M)</option>
+                  <option value="98.29">Roosevelt Island (F)</option>
+                  <option value="98.30">Bleecker St (D, F, B, M, 6)</option>
+                  <option value="98.31">175 St (A)</option>
+                  <option value="98.50">59 St-Columbus Circle (A, B, C, D, 1)</option>
+                  <option value="98.51">Grand Central-42 St (4, 5, 6)</option>
+                  <option value="98.72">14 St-Union Sq (L, N, Q, R, W)</option>
+                  <option value="98.77">34 St-Penn Station (A)</option>
+                  <option value="98.84">Times Sq-42 St (1, 2, 3)</option>
+                  <option value="98.87">Chambers St (1, 2, 3)</option>
+                  <option value="98.92">Brooklyn Bridge (4, 5, 6)</option>
+                  <option value="98.93">51 St (6)</option>
+                  <option value="98.93">Fulton St (A, C, J, Z, 2, 3, 4, 5)</option>
+                  <option value="98.96">72 St (1, 2, 3)</option>
+                  <option value="98.97">Lexington Av-63 St (F, Q)</option>
+                  <option value="99.06">168 St (A, C)</option>
+                  <option value="99.13">135 St (2, 3)</option>
+                  <option value="99.14">14 St-Union Sq (N, Q, R, W)</option>
+                  <option value="99.22">Inwood-207 St (A)</option>
+                  <option value="99.24">Roosevelt Island (F)</option>
+                  <option value="99.25">72 St (Q)</option>
+                  <option value="99.34">47-50 Sts-Rockefeller Center (B, D, F, M)</option>
+                  <option value="99.34">66 St-Lincoln Center (1)</option>
+                  <option value="99.53">34 St-Herald Sq (B, D, F, M)</option>
+                  <option value="99.56">34 St-Hudson Yards (7)</option>
+                  <option value="99.59">34 St-Penn Station (1)</option>
+                  <option value="99.83">Canal St (6)</option>
+                  <option value="91.28">Crown Hts-Utica Av (3, 4)</option>
+                  <option value="93.10">Pacific St-Atlantic Av (D, N, R)</option>
+                  <option value="93.78">Court St (R)</option>
+                  <option value="94.69">Court St (R)</option>
+                  <option value="95.00">Brooklyn College-Flatbush Av (2, 5)</option>
+                  <option value="95.18">Clark St (2, 3)</option>
+                  <option value="95.41">Myrtle-Wyckoff Avs (L)</option>
+                  <option value="95.50">Borough Hall (2, 3, 4, 5)</option>
+                  <option value="96.02">Pacific St-Atlantic Av (D, N, R)</option>
+                  <option value="96.21">Euclid Av (A, C)</option>
+                  <option value="96.49">Clark St (2, 3)</option>
+                  <option value="96.93">DeKalb Av (B, Q, R)</option>
+                  <option value="97.04">Myrtle-Wyckoff Avs (L, M)</option>
+                  <option value="97.06">Atlantic Av (4, 5)</option>
+                  <option value="97.11">Borough Hall (2, 3, 4, 5)</option>
+                  <option value="97.38">Euclid Av (A, C)</option>
+                  <option value="97.55">Clark St (2, 3)</option>
+                  <option value="97.61">DeKalb Av (B, Q, R)</option>
+                  <option value="97.66">Pacific St-Atlantic Av (D, N, R)</option>
+                  <option value="97.91">Flushing Av (J, M)</option>
+                  <option value="97.92">Franklin Av (C, S)</option>
+                  <option value="98.25">Atlantic Av (B, Q)</option>
+                  <option value="98.33">Crown Hts-Utica Av (3, 4)</option>
+                  <option value="98.41">Myrtle-Wyckoff Avs (M)</option>
+                  <option value="98.42">Marcy Av (J, M, Z)</option>
+                  <option value="98.45">Marcy Av (J, M, Z)</option>
+                  <option value="98.62">Euclid Av (A, C)</option>
+                  <option value="98.86">Kings Highway (B, Q)</option>
+                  <option value="98.90">DeKalb Av (B, Q, R)</option>
+                  <option value="99.13">Church Av (F, G)</option>
+                  <option value="99.14">Utica Av (A, C)</option>
+                  <option value="99.20">Coney Island-Stillwell Av (DFNQ)</option>
+                  <option value="99.20">Church Av (2, 5)</option>
+                  <option value="99.35">Bay Parkway (D)</option>
+                  <option value="99.36">Atlantic Av (2, 3)</option>
+                  <option value="99.40">Jay St (A, C, F, R)</option>
+                  <option value="99.62">Prospect Park (B, Q, S)</option>
+                  <option value="95.15">Kew Gardens-Union Tpke (E, F)</option>
+                  <option value="96.12">Junction Blvd (7)</option>
+                  <option value="96.77">Kew Gardens-Union Tpke (E, F)</option>
+                  <option value="97.45">Flushing-Main St (7)</option>
+                  <option value="97.68">Jamaica Center (E, J, Z)</option>
+                  <option value="97.81">Briarwood (E, F)</option>
+                  <option value="97.93">Mott Av (A)</option>
+                  <option value="98.00">Kew Gardens-Union Tpke (E, F)</option>
+                  <option value="98.09">Jamaica-179 St (F)</option>
+                  <option value="98.14">Forest Hills (E, F, M, R)</option>
+                  <option value="98.61">Jackson Hts-Roosevelt Av (E, F, M, R)</option>
+                  <option value="98.76">Sutphin Blvd-Archer Av-JFK (E, J, Z)</option>
+                  <option value="98.76">Queens Plaza (E, M, R)</option>
+                  <option value="98.83">Jamaica-Van Wyck (E)</option>
+                  <option value="98.90">CitiCorp/Court Square (7, E, G)</option>
+                  <option value="99.13">21 St-Queensbridge (F)</option>
+                  <option value="99.15">74 St-Broadway (7)</option>
+                </datalist>
+            </form>
+
+            <!-- Giving it an id for the jQuery to reference and for CSS to style -->
+
+            <form>
+                <h2 class="menuintro">Which station do you arrive at?</h2>
+                <input type="text" list="end_station" placeholder="Station name">
+                <datalist id="end_station">
+                    <option value="86.20">161 St-Yankee Stadium (4, B, D)</option>
+                    <option value="93.15">161 St-Yankee Stadium (4)</option>
+                    <option value="96.25">3 Av-149 St (2, 5)</option>
+                    <option value="97.82">233 St (2, 5)</option>
+                    <option value="97.87">Pelham Pkwy (2, 5)</option>
+                    <option value="98.18">Simpson St (2, 5)</option>
+                    <option value="98.60">Gun Hill Rd (2, 5)</option>
+                    <option value="98.88">Hunts Point Av (6)</option>
+                    <option value="99.06">231 St (1)</option>
+                    <option value="99.06">Kingsbridge Rd (B, D)</option>
+                    <option value="99.07">Pelham Bay Park (6)</option>
+                    <option value="99.12">180 St (2, 5)</option>
+                    <option value="99.13">Fordham Rd (4)</option>
+                    <option value="99.16">161 St-Yankee Stadium (B, D)</option>
+                    <option value="76.78">168 St (1)</option>
+                    <option value="79.02">181 St (1)</option>
+                    <option value="81.97">168 St (1)</option>
+                    <option value="83.94">96 St (2, 3, 1)</option>
+                    <option value="85.88">Grand Central-42 St (7)</option>
+                    <option value="87.97">Times Sq-42 St (N, Q, R, W)</option>
+                    <option value="88.43">191 St (1)</option>
+                    <option value="88.50">181 St (1)</option>
+                    <option value="88.75">14 St (A, C, E)</option>
+                    <option value="89.08">96 St (Q)</option>
+                    <option value="89.45">125 St (A, B, C, D)</option>
+                    <option value="89.56">Bleecker St (D, F, B, M, 6)</option>
+                    <option value="89.85">191 St (1)</option>
+                    <option value="91.67">181 St (1)</option>
+                    <option value="92.66">14 St-Union Sq (L)</option>
+                    <option value="93.47">125 St (4, 5, 6)</option>
+                    <option value="93.54">96 St (2, 3, 1)</option>
+                    <option value="93.69">Chambers St (1, 2, 3)</option>
+                    <option value="94.27">96 St (Q)</option>
+                    <option value="94.50">Times Sq-42 St (1, 2, 3, 7)</option>
+                    <option value="94.66">191 St (1)</option>
+                    <option value="95.04">Grand Central-42 St (4, 5, 6, 7, S)</option>
+                    <option value="95.29">Bowling Green (4, 5)</option>
+                    <option value="95.58">191 St (1)</option>
+                    <option value="95.67">Lexington Av-53 St EM</option>
+                    <option value="96.49">168 St 1AC</option>
+                    <option value="96.51">34 St-Herald Sq (B, D, F, M, N, Q, R, W)</option>
+                    <option value="96.55">8 Av (L)</option>
+                    <option value="96.72">Times Sq-42 St (N, Q, R, W)</option>
+                    <option value="96.77">Bleecker St (D, F, B, M, 6)</option>
+                    <option value="96.80">34 St-Penn Station (2, 3)</option>
+                    <option value="96.83">Bleecker St (D, F, B, M, 6)</option>
+                    <option value="96.94">23 St (6)</option>
+                    <option value="97.00">Bleecker St (D, F, B, M, 6)</option>
+                    <option value="97.06">168 St (1)</option>
+                    <option value="97.08">South Ferry (1)</option>
+                    <option value="97.16">South Ferry (1)</option>
+                    <option value="97.18">Bowling Green (4, 5)</option>
+                    <option value="97.22">Dyckman St (1)</option>
+                    <option value="97.33">86 St (Q)</option>
+                    <option value="97.40">34 St-Penn Station (C, E)</option>
+                    <option value="97.55">14 St (A, C, E)</option>
+                    <option value="97.59">175 St (A)</option>
+                    <option value="97.63">Chambers St (1, 2, 3)</option>
+                    <option value="97.74">34 St-Penn Station (C, E)</option>
+                    <option value="97.74">125 St (A, B, C, D)</option>
+                    <option value="97.74">181 St (1)</option>
+                    <option value="97.76">190 St (A)</option>
+                    <option value="97.79">57 St-7 Av (N, Q, R, W)</option>
+                    <option value="97.82">125 St (A, B, C, D)</option>
+                    <option value="97.82">23 St (6)</option>
+                    <option value="97.86">86 St (Q)</option>
+                    <option value="97.91">Fulton St (J, Z)</option>
+                    <option value="97.95">125 St (4, 5, 6)</option>
+                    <option value="97.98">14 St/8 Av (A, C, E, L)</option>
+                    <option value="97.99">34 St-Penn Station (C, E)</option>
+                    <option value="98.04">168 St (1)</option>
+                    <option value="98.08">Fulton St (2, 3)</option>
+                    <option value="98.21">181 St (A)</option>
+                    <option value="98.24">34 St-Herald Sq (N, Q, R, W)</option>
+                    <option value="98.27">West 4 St (A, B, C, D, E, F, M)</option>
+                    <option value="98.29">Roosevelt Island (F)</option>
+                    <option value="98.30">Bleecker St (D, F, B, M, 6)</option>
+                    <option value="98.31">175 St (A)</option>
+                    <option value="98.50">59 St-Columbus Circle (A, B, C, D, 1)</option>
+                    <option value="98.51">Grand Central-42 St (4, 5, 6)</option>
+                    <option value="98.72">14 St-Union Sq (L, N, Q, R, W)</option>
+                    <option value="98.77">34 St-Penn Station (A)</option>
+                    <option value="98.84">Times Sq-42 St (1, 2, 3)</option>
+                    <option value="98.87">Chambers St (1, 2, 3)</option>
+                    <option value="98.92">Brooklyn Bridge (4, 5, 6)</option>
+                    <option value="98.93">51 St (6)</option>
+                    <option value="98.93">Fulton St (A, C, J, Z, 2, 3, 4, 5)</option>
+                    <option value="98.96">72 St (1, 2, 3)</option>
+                    <option value="98.97">Lexington Av-63 St (F, Q)</option>
+                    <option value="99.06">168 St (A, C)</option>
+                    <option value="99.13">135 St (2, 3)</option>
+                    <option value="99.14">14 St-Union Sq (N, Q, R, W)</option>
+                    <option value="99.22">Inwood-207 St (A)</option>
+                    <option value="99.24">Roosevelt Island (F)</option>
+                    <option value="99.25">72 St (Q)</option>
+                    <option value="99.34">47-50 Sts-Rockefeller Center (B, D, F, M)</option>
+                    <option value="99.34">66 St-Lincoln Center (1)</option>
+                    <option value="99.53">34 St-Herald Sq (B, D, F, M)</option>
+                    <option value="99.56">34 St-Hudson Yards (7)</option>
+                    <option value="99.59">34 St-Penn Station (1)</option>
+                    <option value="99.83">Canal St (6)</option>
+                    <option value="91.28">Crown Hts-Utica Av (3, 4)</option>
+                    <option value="93.10">Pacific St-Atlantic Av (D, N, R)</option>
+                    <option value="93.78">Court St (R)</option>
+                    <option value="94.69">Court St (R)</option>
+                    <option value="95.00">Brooklyn College-Flatbush Av (2, 5)</option>
+                    <option value="95.18">Clark St (2, 3)</option>
+                    <option value="95.41">Myrtle-Wyckoff Avs (L)</option>
+                    <option value="95.50">Borough Hall (2, 3, 4, 5)</option>
+                    <option value="96.02">Pacific St-Atlantic Av (D, N, R)</option>
+                    <option value="96.21">Euclid Av (A, C)</option>
+                    <option value="96.49">Clark St (2, 3)</option>
+                    <option value="96.93">DeKalb Av (B, Q, R)</option>
+                    <option value="97.04">Myrtle-Wyckoff Avs (L, M)</option>
+                    <option value="97.06">Atlantic Av (4, 5)</option>
+                    <option value="97.11">Borough Hall (2, 3, 4, 5)</option>
+                    <option value="97.38">Euclid Av (A, C)</option>
+                    <option value="97.55">Clark St (2, 3)</option>
+                    <option value="97.61">DeKalb Av (B, Q, R)</option>
+                    <option value="97.66">Pacific St-Atlantic Av (D, N, R)</option>
+                    <option value="97.91">Flushing Av (J, M)</option>
+                    <option value="97.92">Franklin Av (C, S)</option>
+                    <option value="98.25">Atlantic Av (B, Q)</option>
+                    <option value="98.33">Crown Hts-Utica Av (3, 4)</option>
+                    <option value="98.41">Myrtle-Wyckoff Avs (M)</option>
+                    <option value="98.42">Marcy Av (J, M, Z)</option>
+                    <option value="98.45">Marcy Av (J, M, Z)</option>
+                    <option value="98.62">Euclid Av (A, C)</option>
+                    <option value="98.86">Kings Highway (B, Q)</option>
+                    <option value="98.90">DeKalb Av (B, Q, R)</option>
+                    <option value="99.13">Church Av (F, G)</option>
+                    <option value="99.14">Utica Av (A, C)</option>
+                    <option value="99.20">Coney Island-Stillwell Av (DFNQ)</option>
+                    <option value="99.20">Church Av (2, 5)</option>
+                    <option value="99.35">Bay Parkway (D)</option>
+                    <option value="99.36">Atlantic Av (2, 3)</option>
+                    <option value="99.40">Jay St (A, C, F, R)</option>
+                    <option value="99.62">Prospect Park (B, Q, S)</option>
+                    <option value="95.15">Kew Gardens-Union Tpke (E, F)</option>
+                    <option value="96.12">Junction Blvd (7)</option>
+                    <option value="96.77">Kew Gardens-Union Tpke (E, F)</option>
+                    <option value="97.45">Flushing-Main St (7)</option>
+                    <option value="97.68">Jamaica Center (E, J, Z)</option>
+                    <option value="97.81">Briarwood (E, F)</option>
+                    <option value="97.93">Mott Av (A)</option>
+                    <option value="98.00">Kew Gardens-Union Tpke (E, F)</option>
+                    <option value="98.09">Jamaica-179 St (F)</option>
+                    <option value="98.14">Forest Hills (E, F, M, R)</option>
+                    <option value="98.61">Jackson Hts-Roosevelt Av (E, F, M, R)</option>
+                    <option value="98.76">Sutphin Blvd-Archer Av-JFK (E, J, Z)</option>
+                    <option value="98.76">Queens Plaza (E, M, R)</option>
+                    <option value="98.83">Jamaica-Van Wyck (E)</option>
+                    <option value="98.90">CitiCorp/Court Square (7, E, G)</option>
+                    <option value="99.13">21 St-Queensbridge (F)</option>
+                    <option value="99.15">74 St-Broadway (7)</option>
+               </datalist>
+            </form>
+
+
+            <!-- Creates the table element -->
             <table>
-              <!-- Table row -->
+                <!-- Table row -->
                 <tr>
                     <th id="thh2">How often do you take this train each week?</th>
                 </tr>
                 <tr>
-                  <!-- Cell within the row -->
+                    <!-- Cell within the row -->
                     <td>
-                      <!-- Giving it the id="rides" to be pulled by jQuery -->
+                        <!-- Giving it the id="rides" to be pulled by jQuery -->
                         <input id="rides" class="qty" type="number" placeholder="# rides" />
                     </td>
                 </tr>
@@ -373,11 +374,12 @@
             </div>
 
             <div class="sources">
-              <hr>
-              <p><sup>*</sup>With copious assistance from TC McCarthy and Sandeep Junnarkar.</p>
-              <p><sup>*</sup>Data from New York City Transit's <a href src="180220_1000_Transit.pdf">board meeting packet</a> from February 2018. <a href src="elevator-escalator-q4-2017.pdf">[PDF of Excerpted data tables]</a></p>
-              <br>
-              <p>Where subway stations have more than one elevator listed, I chose the best-performing one, for two reasons: (1) to be conservative in my calculations and (2) to give the MTA the benefit of the doubt by assuming a hypothetical rider is near the functioning elevator instead of a broken one.</p>
+                <hr>
+                <p><sup>*</sup>With copious assistance from TC McCarthy and Sandeep Junnarkar.</p>
+                <p><sup>*</sup>Data from New York City Transit's <a href src="180220_1000_Transit.pdf">board meeting packet</a> from February 2018. <a href src="elevator-escalator-q4-2017.pdf">[PDF of Excerpted data tables]</a></p>
+                <br>
+                <p>Where subway stations have more than one elevator listed, I chose the best-performing one, for two reasons: (1) to be conservative in my calculations and (2) to give the MTA the benefit of the doubt by assuming a hypothetical rider is
+                    near the functioning elevator instead of a broken one.</p>
             </div>
 
         </div>
