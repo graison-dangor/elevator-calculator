@@ -23,11 +23,9 @@ html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
     font-family: "helvetica", sans-serif;
-    background-color:rgba(45, 45, 45);
-    color: white;
+    color: black;
     font-weight: lighter;
 }
-
 
 
 h1 {
@@ -111,6 +109,10 @@ a {
 
 h5 {
   font-weight: lighter;
+}
+
+#thh2 {
+  font-size: 1.5em;
 }
 
 /* Tablet/Desktop overrides */
