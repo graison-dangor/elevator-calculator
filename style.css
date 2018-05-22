@@ -18,34 +18,31 @@ You will find this is far easier than the opposite task of using CSS to cram you
     box-sizing: border-box;
 }
 
-
 html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
     font-family: "helvetica", sans-serif;
-    background-color:rgba(45, 45, 45);
+    background-color: rgba(45, 45, 45, 1);
     color: white;
     font-weight: lighter;
 }
 
-
-
 h1 {
-    font-weight: 525;
+    font-weight: bold;
     margin-bottom: 20px;
 }
 
 .container {
     max-width: 500px;
+    width: 100%;
     margin: 0 auto;
     padding: 1em;
     display: block;
 }
 
-
 select {
     font-family: "helvetica", sans-serif;
-    background-color:white;
+    background-color: white;
     color: black;
 }
 
@@ -59,10 +56,10 @@ table, .menuintro {
 
 td, th {
     display: inline;
-    font-weight:400;
+    font-weight: 400;
 }
 
-input {
+input, select {
     max-width: 100%;
     display: block;
 }
@@ -79,49 +76,49 @@ h2 {
 }
 
 button {
-  border-radius: 5px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: black;
-  position: relative;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: black;
+    position: relative;
 }
 
 hr {
-  border: 1%;
-  height: 0.25px;
-  background: #ffffff;
-  max-width: 15%;
-  margin-left: 0;
+    border: 1px solid black;
+    height: 0.25px;
+    background: #ffffff;
+    max-width: 15%;
+    margin-left: 0;
 }
 
 img {
-  margin-top: 5%;
-  max-width: 90%;
+    margin-top: 5%;
+    width: 100%;
 }
 
 .sources {
-  margin-top: 40px;
-  font-weight: lighter;
-  font-size: .8em;
+    margin-top: 40px;
+    font-weight: lighter;
+    font-size: .8em;
 }
 
 a {
-  color: seagreen;
+    color: seagreen;
 }
 
 h5 {
-  font-weight: lighter;
+    font-weight: lighter;
 }
+
 
 /* Tablet/Desktop overrides */
 
 @media(min-width: 681px) {
     /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
-
-.container {
-    max-width: 600px;
+    .container {
+        max-width: 600px;
+    }
 }
-
 
 @media(min-width: 729px) {
     /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
